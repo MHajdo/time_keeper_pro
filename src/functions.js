@@ -14,7 +14,7 @@ function generate_rand_time(min, max) {
     let rand_hours = rand_date.getHours();
     let rand_minutes = rand_date.getMinutes();
     if (rand_minutes < 10) {
-        rand_minutes = 0 + rand_minutes;
+        rand_minutes = '0' + rand_minutes;
     }
 
     return `${rand_hours}:${rand_minutes}`;
