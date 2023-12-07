@@ -28,7 +28,7 @@ function generate_attendance(form_data) {
     for (let i = 1; i <= 31; i++) {
         currentDate.setDate(i);
 
-        if (currentDate.getDay() == 0 || currentDate.getDay() == 6) {
+        if (currentDate.getDay() === 0 || currentDate.getDay() === 6) {
             continue;
         }
 

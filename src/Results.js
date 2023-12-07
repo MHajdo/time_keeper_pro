@@ -1,11 +1,12 @@
+import { Table } from "react-bootstrap";
 
 function Results({generated_data}) {
 
   return (
-    <div className='container'>
+    <>
       {generated_data.map((user_data) => (<div>
           <h2>{user_data.name}</h2>
-        <table border={1}>
+        <Table bordered striped hover>
           <tr>
             <th>Dan</th>
             <th>Prihod</th>
@@ -18,10 +19,10 @@ function Results({generated_data}) {
             <td>{daily_row.departed}</td>
           </tr>
           ))}
-        </table>
+        </Table>
       </div>
       ))}
-    </div>
+    </>
   );
 }
 
